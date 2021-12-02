@@ -16,16 +16,26 @@ import {
   getDoc,
 } from "firebase/firestore";
 
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
-};
+// const firebaseConfig = {
+//   apiKey: process.env.NEXT_PUBLIC_API_KEY,
+//   authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+//   projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+//   storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+//   messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+//   appId: process.env.NEXT_PUBLIC_APP_ID,
+//   measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
+// };
 
+const firebaseConfig = {
+  apiKey: "AIzaSyD1_mw9F5Gv5EXdAHAYE3Jnm1CAzYIwIeg",
+  authDomain: "todo-list-d496d.firebaseapp.com",
+  projectId: "todo-list-d496d",
+  storageBucket: "todo-list-d496d.appspot.com",
+  messagingSenderId: "1084705387092",
+  appId: "1:1084705387092:web:3facb72d4694ec8a18f3c1",
+  measurementId: "G-JTRN4L4W4C",
+};
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth();
